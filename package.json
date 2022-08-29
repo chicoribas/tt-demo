@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo testing"
+    "test": "echo testing",
+    "build": "ncc build js-action/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/chicoribas/tt-demo/issues"
   },
-  "homepage": "https://github.com/chicoribas/tt-demo#readme"
+  "homepage": "https://github.com/chicoribas/tt-demo#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1",
+    "@actions/github": "^5.0.3",
+    "@vercel/ncc": "^0.34.0"
+  }
 }
