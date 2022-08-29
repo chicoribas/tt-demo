@@ -15,4 +15,14 @@ jobs:
     steps:
       - run: echo ${{ inputs.echoMessage }}
 
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo job2
+
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo job3
+
 
