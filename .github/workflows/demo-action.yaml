@@ -8,15 +8,15 @@ on:
         type: string
         required: false
         description: What should I echo?
-    test:
-      type: boolean
-      required: false
-      default: false
-      description: Should I test?
-    runJob2: 
-      type: string
-      required: false
-      description: Input job2 to run job 2
+      test:
+        type: boolean
+        required: false
+        default: false
+        description: Should I test?
+      runJob2: 
+        type: string
+        required: false
+        description: Input job2 to run job 2
 
 jobs:
   job1:
