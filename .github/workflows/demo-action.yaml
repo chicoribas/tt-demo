@@ -52,6 +52,7 @@ jobs:
   testing:
     runs-on: ubuntu-latest
     if: ${{ inputs.test }}
+    environment: test
     needs: job1
     steps:
       - uses: actions/checkout@v3
