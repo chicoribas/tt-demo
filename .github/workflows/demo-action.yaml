@@ -61,5 +61,12 @@ jobs:
           node-version: '18'
       - run: npm run test
 
+  composite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: chicoribas/tt-demo/composite-action@main
+        with:
+          who-to-greet: GBTECHERS
+
 
 
