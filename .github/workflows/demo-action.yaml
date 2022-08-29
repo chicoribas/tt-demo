@@ -68,5 +68,12 @@ jobs:
         with:
           who-to-greet: GBTECHERS
 
+  js:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: chicoribas/actions-playground/js-action@main
+        with:
+          who-to-greet: GBTECHERS FROM JS
+
 
 
