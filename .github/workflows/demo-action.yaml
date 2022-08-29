@@ -1,0 +1,18 @@
+
+name: "Demo do Tech Talks"
+
+on:
+  workflow_dispatch:
+    inputs:
+      echoMessage:
+        type: string
+        required: false
+        description: What should I echo?
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ inputs.echoMessage }}
+
+
